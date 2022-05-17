@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Bài 1: Tìm số nguyên</h1>
+      <div class="alert alert-warning" id="txtSoNguyen"></div>
+      <button onclick="timSoNguyen()" type="button" class="btn btn-primary">
+        Chạy KQ
+      </button>
+      <br />
+      <br />
+      <form class="w-50">
+        <h1>Bài 2: Tính tổng S(n) = x + x^1 + x^2 + ...+ x^n</h1>
+        <div class="form-group">
+          <label for="soX">Nhập x</label>
+          <input type="number" class="form-control w-50" id="soX" />
+        </div>
+        <div class="form-group">
+          <label for="soN">Nhập n</label>
+          <input type="number" class="form-control w-50" id="soN" />
+        </div>
+        <button onclick="tinhTong()" type="button" class="btn btn-primary">
+          Tính KQ
+        </button>
+      </form>
+      <div id="txtTong" class="alert alert-warning w-50"></div>
+      <br />
+      <br />
+      <h1>Chia màu theo chẵn lẻ</h1>
+      <button onclick="inMauChanLe()" type="button" class="btn btn-primary">
+        Hiện KQ
+      </button>
+      <div id="inChanLe" class="alert width-500 height-100"></div>
+      <br />
+
+      <form class="w-50">
+        <div class="form-group">
+          <label for="soX">Nhập n</label>
+          <input type="number" class="form-control w-50" id="nhapSo" />
+        </div>
+
+        <button onclick="inSoNguyenTo()" type="button" class="btn btn-primary">
+          Hiện KQ
+        </button>
+        <div id="soNguyenTo" class="alert alert-warning"></div>
+      </form>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
